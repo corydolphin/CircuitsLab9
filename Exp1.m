@@ -1,0 +1,10 @@
+load('Data/Exp1P1.mat');
+plot(V1,Vout,'o'); hold on;
+load('Data/Exp1P2.mat');
+plot(V1,Vout,'ro');
+load('Data/Exp1P3.mat');
+plot(V1,Vout,'go');
+xlabel('V_1 (Volts)');
+ylabel('V_{out} (Volts)');
+title('Voltage Transfer Characteristic for a Diff Amp');
+legend('VTC for V_2 = 2 V','VTC for V_2 = 3 V','VTC for V_2 = 4 V','Location','NorthWest');
