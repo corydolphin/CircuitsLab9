@@ -1,9 +1,9 @@
-load('Exp1P1.mat');
-plot(V1,Vout,'.'); hold all;
-load('Exp1P2.mat');
-plot(V1,Vout,'.');
-load('Exp1P3.mat');
-plot(V1,Vout,'.');
+load('Data/Exp1P1.mat');
+plot(V1,Vout,'o'); hold on;
+load('Data/Exp1P2.mat');
+plot(V1,Vout,'ro');
+load('Data/Exp1P3.mat');
+plot(V1,Vout,'go');
 xlabel('V_1 (Volts)');
 ylabel('V_{out} (Volts)');
 title('Voltage Transfer Characteristic for a Diff Amp');
