@@ -1,4 +1,3 @@
-clear;
 load('Data/Exp3SmallSignalCh1.isf');
 load('Data/Exp3SmallSignalCh2.isf');
 %%%%%
