@@ -1,7 +1,24 @@
 \section*{Experiment 3}
+%signal was 3.2 kHz
+Differential amplifiers are often used in AC contexts, where the output voltage often has to change rapidly depending on the inputs. One case is when a unity-gain amplifier must pass a square wave. We saw in pre-lab 9 that an improved diff amp with a small capacitive load can only change \Vout so quickly, and in this experiment we tested the step response of the diff amp to both large and small steps, with a $1 nf$ capacitive load parallel to the feedback loop. We saw that given a small step, \Vout takes a first-order approach to \Vin, and extracted time constants for both the up- and down-swings. We also saw that given a large step, \Vout approaches \Vin linearly, and we extracted values for the slew rate for both the up- and down-swings.
 
-Differential ampl
+\subsection*{Small Signal Analysis}
 
+% Is the response symmetrical? Does the ampliﬁer exhibit approximately
+% linear behavior? Extract a time constant both for the up-going and for the down-going
+% output transitions. How do these compare with that which you compute from the measured
+% values of the load capacitance and the differential-mode transconductance gain that you
+% found in Experiment 2? In your report, include a single plot showing both scope traces
+% along with the extracted time constants.
+
+We first started by sending a $3.2 kHz$ square wave into the unity-gain follower, with a peak to peak voltage of 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../Figures/Exp3P2.eps}
+\caption{}
+\label{fig:exp3p2}
+\end{figure}
 
 \subsection*{Large Signal Analysis}
 
@@ -19,21 +36,4 @@ Differential ampl
 \includegraphics[width=\linewidth]{../Figures/Exp3P1.eps}
 \caption{}
 \label{fig:exp3p1}
-\end{figure}
-
-\subsection*{Small Signal Analysis}
-
-% Is the response symmetrical? Does the ampliﬁer exhibit approximately
-% linear behavior? Extract a time constant both for the up-going and for the down-going
-% output transitions. How do these compare with that which you compute from the measured
-% values of the load capacitance and the differential-mode transconductance gain that you
-% found in Experiment 2? In your report, include a single plot showing both scope traces
-% along with the extracted time constants.
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\linewidth]{../Figures/Exp3P2.eps}
-\caption{}
-\label{fig:exp3p2}
 \end{figure}
