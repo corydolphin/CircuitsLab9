@@ -8,5 +8,5 @@ ylim([-8e-5 7e-5]);
 xlabel('V_{dm} (Volts)');
 ylabel('I_{out} (Amps)');
 title('I_{out} as a Function of V_{dm} for V_{out} = 2.5 V');
-legend('Data',strcat('G_m = ', num2str(coeffs(1)), '\Omega^{-1}'),'Location','NorthWest');
+legend('Data',strcat('G_m = ', '2.3687\times 10^{-4}', '  \Omega^{-1}'),'Location','NorthWest');
 gm = coeffs(1);
