@@ -25,6 +25,4 @@ title('Differential-mode gain');
 xlabel('Differential-mode Voltage V_{dm} (V)');
 ylabel('Output Voltage (V)');
 
-h = legend('Experimental V_{out}',...
- strcat('Differential mode gain, linear fit for V_{out}=', num2str(p(1)), 'V_{dm} ', ' + ' , num2str(p(2))),...
- 'Location','SouthEast');
+h = legend('Experimental V_{out}','A_{dm}, linear fit for V_{out}=110.18V_{dm} + 1.53' , 'Location','SouthEast');
