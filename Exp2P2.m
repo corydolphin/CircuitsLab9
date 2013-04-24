@@ -9,5 +9,5 @@ xlim([0 5]);
 xlabel('V_{out} (Volts)');
 ylabel('I_{out} (Amps)');
 title('I_{out} as a Function of V_{out} with V_{dm} = 0');
-legend('Data',strcat('Incremental Output Resistance R_{out} = ', num2str(1/coeffs(1)), ' \Omega'),'Location','SouthEast');
+legend('Data',strcat('Incremental Output Resistance R_{out} = 489.56 k\Omega'),'Location','SouthEast');
 rout = 1/coeffs(1);
