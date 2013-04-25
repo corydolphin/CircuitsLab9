@@ -12,7 +12,7 @@ Recalling pre-lab 9, we know that \Vout follows \Vin according to the following 
 V_{out} = V_{in} - V_{out}(0)e^{-\frac{G_m}{C}t}
 \end{equation}
 
-Where \Gm is the incremental transconductance gain of the circuit and $C$ is the capacitance of the capactive load to the circuit. We define our time constant $\tau$ as:
+Where \Gm is the incremental transconductance gain of the circuit and $C$ is the capacitance of the capacitive load to the circuit. We define our time constant $\tau$ as:
 
 \begin{equation}
 \tau = \frac{C}{G_m}
@@ -27,7 +27,7 @@ Given our extracted value for \Gm from experiment 2 and the $1 nF$ capacitor, we
 \label{fig:exp3p2}
 \end{figure}
 
-We first saw that the down- and up-swing of \Vout following a first-order approach to \Vin, which is the kind of approach we expect for small steps. For the down-swinging change in \Vout, we found that $\tau = 3.8 \times 10^{-6}$, and for the up-swing change in \Vout we found that $\tau = 3.48 \times 10^{-6}$. The experimentally-derived values for $\tau$ deviate from our theoretical value by an average of 15\%, which is pretty close considering the magnitude of the time constant. We expect that the slight difference (about 10\%) between the down-swing and up-swing time constants could be due to the different inherenet properties of the pMOS and nMOS transistors used in the current mirrors that generate \Vout. Small differences in these transistors could cause \Vout to deviate slightly when $V_{dm} = 0$, which would in turn change how \Vout approaches \Vin when increasing or decreasing.
+We first saw that the down- and up-swing of \Vout following a first-order approach to \Vin, which is the kind of approach we expect for small steps. For the down-swinging change in \Vout, we found that $\tau = 3.8 \times 10^{-6}$, and for the up-swing change in \Vout we found that $\tau = 3.48 \times 10^{-6}$. The experimentally-derived values for $\tau$ deviate from our theoretical value by an average of 15\%, which is pretty close considering the magnitude of the time constant. We expect that the slight difference (about 10\%) between the down-swing and up-swing time constants could be due to the different inherent properties of the pMOS and nMOS transistors used in the current mirrors that generate \Vout. Small differences in these transistors could cause \Vout to deviate slightly when $V_{dm} = 0$, which would in turn change how \Vout approaches \Vin when increasing or decreasing.
 
 \subsection*{Large Signal Analysis}
 
@@ -47,4 +47,4 @@ We therefore expect \Vout to follow \Vin linearly for a large step change. Figur
 \label{fig:exp3p1}
 \end{figure}
 
-We then extracted values for the down- and up-swing slew rates. We found that the extracted down-swing slew rate had value of $6.69 \times 10^4 \frac{Volts}{s}$, and the up-swing slew rate had a value of $-7.6 \times 10^4 \frac{Volts}{s}$. We then used the maximum and minimum current values we found in experiment two, and the value of the load capactior, to find theoretical values for these slopes. For the down-swing voltage, when the current output is railing low, we found the theoretical slope to be $-7.071 \times 10^4 \frac{Volts}{s}$, and for the up-swing, we found the theoretical slope to be $6.69 \times 10^4 \frac{Volts}{s}$. The values we found for the up-swing are almost the same, but the values for the down-swing are off by about 7\%. Largely, however, our theoretical values match our extracted values very closely, indicated how effective the linear estimation is at predicted the unity-gain follower's behavior given large voltage steps.
+We then extracted values for the down- and up-swing slew rates. We found that the extracted down-swing slew rate had value of $6.69 \times 10^4 \frac{Volts}{s}$, and the up-swing slew rate had a value of $-7.6 \times 10^4 \frac{Volts}{s}$. We then used the maximum and minimum current values we found in experiment two, and the value of the load capacitor, to find theoretical values for these slopes. For the down-swing voltage, when the current output is railing low, we found the theoretical slope to be $-7.071 \times 10^4 \frac{Volts}{s}$, and for the up-swing, we found the theoretical slope to be $6.69 \times 10^4 \frac{Volts}{s}$. The values we found for the up-swing are almost the same, but the values for the down-swing are off by about 7\%. Largely, however, our theoretical values match our extracted values very closely, indicated how effective the linear estimation is at predicted the unity-gain follower's behavior given large voltage steps.

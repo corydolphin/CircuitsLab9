@@ -7,18 +7,18 @@ The first experiment we conducted involved finding the voltage transfer characte
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../Figures/Exp1.eps}
-\caption{Voltage transfer characteristic of the improved differential amplifier. We can see that this improved diff amp displays ideal rail-to-rail output voltage response to both positive and negative values of \Vdm, as well as a rapid climb from the bottom rail to the top rail with increasing \Vdm.}
+\caption{Voltage transfer characteristic of the improved differential amplifier. We can see that this improved differential amplifier displays ideal rail-to-rail output voltage response to both positive and negative values of \Vdm, as well as a rapid climb from the bottom rail to the top rail with increasing \Vdm.}
 \label{fig:exp1p1}
 \end{figure}
-The VTC of the improved differential amplifier displays rail-rail operation for all values of \Vone, and a very climb from 0 to \Vdd once $V_1 > V_2$. The transition region between railing low and railing high is approximately 800 mV wide for all three values of \Vtwo. We next compared the VTC of the improved diff amp with the VTC of the diff amp we worked with during Lab 8, which is reproduced in figure \ref{fig:oldvtc} for convenience.
+The VTC of the improved differential amplifier displays rail-rail operation for all values of \Vone, and a very climb from 0 to \Vdd once $V_1 > V_2$. The transition region between railing low and railing high is approximately 800 mV wide for all three values of \Vtwo. We next compared the VTC of the improved differential amp with the VTC of the differential amp we worked with during Lab 8, which is reproduced in figure \ref{fig:oldvtc} for convenience.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../Figures/OldVTC.eps}
-\caption{Voltage transfer characteristic of the diff amp used in Lab 8. This circuit doesn't display rail-to-rail output voltage response; rather, \Vout increases linearly with \Vin for negative values of \Vdm. In addition, \Vout doesn't change very rapidly towards the top rail with once $V_{dm} > 0$.}
+\caption{Voltage transfer characteristic of the differential amplifier used in Lab 8. This circuit doesn't display rail-to-rail output voltage response; rather, \Vout increases linearly with \Vin for negative values of \Vdm. In addition, \Vout doesn't change very rapidly towards the top rail with once $V_{dm} > 0$.}
 \label{fig:oldvtc}
 \end{figure}
 
-The first obvious different is the poor flooring performance of the old diff amp compared to the new one. When $V_1 > V_2$, we expect the output to rail low (as we see in figure \ref{fig:exp1p1}), but in the old diff amp \Vout instead followed \Vone linearly, a phenomenon we explained in post-lab 8. The top rail seems to behave the same for both differential amplifiers.
+The first obvious different is the poor flooring performance of the old differential amplifier compared to the new one. When $V_1 > V_2$, we expect the output to rail low (as we see in figure \ref{fig:exp1p1}), but in the old diff amp \Vout instead followed \Vone linearly, a phenomenon we explained in post-lab 8. The top rail seems to behave the same for both differential amplifiers.
 
 The width of the transition region (from bottom rail to top rail) for the old differential amplifier is far larger, due to the \Vout following \Vone linearly for some values of \Vone. The slope of transition is also less steep, which indicates that the old diff amp is more likely to be stuck between either rail.
 
