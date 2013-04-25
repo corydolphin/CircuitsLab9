@@ -21,6 +21,10 @@ plot(Exp3LargeSignalCh1(:,1), Exp3LargeSignalCh1(:,2), '.'); hold on;
 plot(Exp3LargeSignalCh2(:,1), Exp3LargeSignalCh2(:,2), 'r.'); hold on;
 plot(Exp3LargeSignalCh2(:,1), p(1).*Exp3LargeSignalCh2(:,1) + p(2), 'g', 'LineWidth',2);
 plot(Exp3LargeSignalCh2(:,1), p2(1).*Exp3LargeSignalCh2(:,1) + p2(2), 'c', 'LineWidth',2.5);
+IbLowerBound = -70.71e-6;
+IbUpperBound = 66.69e-6;
+c = 1e-9;
+
 ylim([2,4.5]);
 xlabel('Time (seconds)');
 ylabel('Amplitude (Volts)');

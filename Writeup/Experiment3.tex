@@ -31,18 +31,20 @@ We first saw that the down- and up-swing of \Vout following a first-order approa
 
 \subsection*{Large Signal Analysis}
 
-% Is the response symmetrical? You will probably notice that the output
-% of the ampliﬁer follows a linear trajectory in time over most of its response to the large input
-% step. This behavior is called slewing, and the constant rate of change of the output voltage
-% with respect to time is called the slew rate of the ampliﬁer. Extract a slew rate for both for
-% the up-going and for the down-going output transitions. How do these compare with those
-% which you compute from the load capacitance and the limiting values of the output current?
-% In your report, include a single plot showing both scope traces along with the extracted slew
-% rates.
+
+We then sent the same square wave through the unity-gain follower, but increased the amplitude to about 2 volts. We know from the pre-lab that differential amplifiers can only increase the output voltage so quickly. Specifically, given a large step change, the unity-gain buffer will follow a linear equation:
+
+\begin{equation}
+V_{out} = \frac{I_b}{C}t + V_{out}(0)
+\end{equation}	
+
+We therefore expect \Vout to follow \Vin linearly for a large step change. Figure \ref{fig:exp3p1} confirms this assumption, as we see that \Vout has very linear regions.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{../Figures/Exp3P1.eps}
-\caption{}
+\caption{Large-signal step response of a unity-gain voltage follower. The up- and down-swing slew rates are about 13\% off in magnitude, a deviation that is likely caused by the pMOS and nMOS transistors not being exactly matched. The extracted slew rate values match our theoretical values very closely.}
 \label{fig:exp3p1}
 \end{figure}
+
+We then extracted values for the down- and up-swing slew rates. We found that the extracted down-swing slew rate had value of $6.69 \times 10^4 \frac{Volts}{s}$, and the up-swing slew rate had a value of $-7.6 \times 10^4 \frac{Volts}{s}$. We then used the maximum and minimum current values we found in experiment two, and the value of the load capactior, to find theoretical values for these slopes. For the down-swing voltage, when the current output is railing low, we found the theoretical slope to be $-7.071 \times 10^4 \frac{Volts}{s}$, and for the up-swing, we found the theoretical slope to be $6.69 \times 10^4 \frac{Volts}{s}$. The values we found for the up-swing are almost the same, but the values for the down-swing are off by about 7\%. Largely, however, our theoretical values match our extracted values very closely, indicated how effective the linear estimation is at predicted the unity-gain follower's behavior given large voltage steps.
